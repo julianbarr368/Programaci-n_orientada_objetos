@@ -1,12 +1,14 @@
-import email
-from unicodedata import name
-from xml.dom.minidom import Document
-
-
 class Account:
     id        = int
     name      = str
-    document  = int
+    document  = str
     email     = str
     password  = str
+
+    def __init__(self, id, name, document):
+        self.id = id
+        self.name = name
+        self.document = document
+      
+
 
